@@ -38,7 +38,7 @@ We'll also need to log into the cluster to push images from our local docker dae
 $ az acr login -n myregistry -g myresourcegroup
 ```
 
-NOTE: Once configured, Draft will inject a registry auth secret into the destination namespace deploying the chart to the cluster so the image can be pulled from the registry. 
+NOTE: Once configured, Draft will inject a registry auth secret into the same destination namespace as the Helm chart that will be deployed to the cluster so the image can be pulled from the registry with the injected registry auth secret. 
 
 ## Drafting with DockerHub
 
